@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="../static/index.css" type="text/css" rel="stylesheet">
+		<title>Transaction №{{.ID}} {{.Money}} {{.Commission}}</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<cardForm>
+				<p class="t1">Отправитель</p>
+				<p class="t2">Номер карты отправителя</p>
+				<input id="sender" type="text" class="cardNumber" value="{{.Sender}}" disabled>
+				<div class="wrapperDate">
+					<p class="t3">Срок<br>действия</p>
+					<select id="month" class="month"> 
+							<option value="{{.Month}}">{{.Month}}</option> 
+					</select>
+					<select id="year" class="year"> 
+							<option value="{{.Year}}">{{.Year}}</option> 
+					</select>
+					<div class="wrapperCVV" align="right">
+						<p class="t4">CVV</p>
+						<input id="CVV" type="text" class="CVV" value="{{.CVV}}" disabled>
+					</div>
+				</div>
+			</cardForm>
+			<cardForm>
+				<p class="t1">Получатель</p>
+				<p class="t2">Номер карты получателя</p>
+				<input id="receiver" type="text" class="cardNumber" value="{{.Receiver}}" disabled>
+				<div class="wrapperMoney">
+					<p class="t5">Сумма<br>перевода</p>
+					<input id="money" type="text" class="money" value="{{.Money}}" disabled>
+					<select id="currency" class="currency"> 
+						<option value="0">$</option> 
+					</select>
+				</div>
+				<div class="wrapperCommission">
+					<p class="t5">Комиссия</p>
+					<input id="money" type="text" class="commission" value="{{.Commission}}" disabled>
+				</div>
+			</cardForm>
+		</div>
+		<footer>
+		</footer>
+	</body>
+</html>

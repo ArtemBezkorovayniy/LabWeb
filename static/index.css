@@ -1,0 +1,252 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper {
+	margin-top: 15vh;
+	display: flex;
+	justify-content: space-around;
+}
+
+cardForm {
+	background: linear-gradient(to top, #aa6655 10%, #ffee99 90%);
+	width: 40vw;
+	border: 3px solid #553311;
+	border-radius: 10px;
+}
+
+cardForm .t1 {
+	font-size: 24px;
+	margin: 20px;
+}
+
+cardForm .t2 {
+	margin: 20px;
+	margin-top:5vh;
+	margin-left:10vw;
+	font-size: 24px;
+}
+
+cardForm .cardNumber {
+	border: 3px solid #553311;
+	background: #ffddbb;
+	height:30px;
+	margin-left:10vw;
+	width:20vw;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+cardForm .wrapperDate {
+	display: flex;
+	margin-top: 10vh;
+}
+
+cardForm .t3 {
+	font-size: 24px;
+	margin: 20px;
+	margin-top: 35px;
+}
+
+cardForm .month {
+	border: 3px solid #553311;
+	background: #ffddbb;
+	padding:5px;
+	height:45px;
+	width: 70px;
+	float:left;
+	margin:20px;
+	margin-left:0px;
+	margin-top:40px;
+	font-size: 24px;
+}
+
+cardForm .year {
+	border: 3px solid #553311;
+	background: #ffddbb;
+	padding:5px;
+	height:45px;
+	width: 70px;
+	float:left;
+	margin:20px;
+	margin-left:0px;
+	margin-top:40px;
+	font-size: 24px;
+}
+
+cardForm .wrapperCVV {
+	margin-top:10px;
+	margin-left:0px;
+	margin-bottom:20px;
+	width:50px;
+	display:block;
+}
+
+cardForm .t4 {
+	text-align:left;
+	font-size: 24px;
+	margin: 20px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+cardForm .CVV {
+	border: 3px solid #553311;
+	background: #ffddbb;
+	height:30px;
+	width:40px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+cardForm .wrapperMoney {
+	margin-top:0px;
+	display: flex;
+}
+
+cardForm .t5 {
+	font-size: 24px;
+	margin: 20px;
+	margin-top: 25px;
+	margin-right: 1vw;
+}
+
+cardForm .money {
+	border: 3px solid #553311;
+	background: #ffddbb;
+	margin-top: 30px;
+	height:30px;
+	width:40%;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+cardForm .currency {
+	border: 3px solid #553311;
+	background: #ffddbb;
+	height:46px;
+	width:70px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 5px;
+	margin-left: -2px;
+	margin-top: 30px;
+}
+
+cardForm .moneySend {
+	border: 3px solid #553311;
+	margin-left:12vw;
+	width:16vw;
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 5px;
+	background: #ffddbb;
+	height:40px;
+}
+
+cardForm .wrapperCommission{
+	margin-top:0vh;
+	display: flex;
+}
+
+cardForm .commission {
+	border: 3px solid #553311;
+	background: #ffddbb;
+	margin-top: 15px;
+	height:30px;
+	width:40%;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.autoFill {
+	background: linear-gradient(to top, #aa6655 10%, #ffee99 90%);
+	border: 3px solid #553311;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 5vh;
+	width:20vw;
+}
+
+.checks {
+	background: linear-gradient(to top, #aa6655 10%, #ffee99 90%);
+	border: 3px solid #553311;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 5vh;
+	width:20vw;
+}
+
+.buttonWrapper {
+	margin-top:0px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.table {
+	margin-top: 5vh;
+	margin-left: 10vw;
+	width:80vw;
+    text-align: center;
+	border: 2px solid #553311;
+	border-radius: 5px;
+	background: linear-gradient(to top, #aa6655 10%, #ffee99 90%);
+	padding: 0px;
+	font-size: 24px;
+    border-spacing: 0px; 
+}
+
+.table th {
+	border: 1px solid #553311;
+	padding: 3px;
+}
+
+.table td {
+	border: 1px solid #553311;
+	padding: 3px;
+}
+
+.filter {
+	margin-top: 5vh;
+	margin-left: 20vw;
+	width:20vw;
+    text-align: center;
+	border: 2px solid #553311;
+	border-radius: 5px;
+	background: linear-gradient(to top, #aa6655 10%, #ffee99 90%);
+	padding: 5px;
+	font-size: 24px;
+}
+
+.undo {
+	margin-top: 5vh;
+	margin-left: 20vw;
+	width:20vw;
+    text-align: center;
+	border: 2px solid #553311;
+	border-radius: 5px;
+	background: linear-gradient(to top, #aa6655 10%, #ffee99 90%);
+	padding: 5px;
+	font-size: 24px;
+}
+
+footer {
+	height:10vh;
+}

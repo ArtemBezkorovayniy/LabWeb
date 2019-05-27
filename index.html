@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="static/index.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="static/js.js"></script>
+	</head>
+	<body onLoad="start()">
+		<script src="static/js.js"></script>
+		<form onsubmit="return validation()">
+		<div class="wrapper">
+			<cardForm>
+				<p class="t1">Отправитель</p>
+				<p class="t2">Номер карты отправителя</p>
+				<input id="sender" type="text" class="cardNumber" placeholder="____ ____ ____ ____" >
+				<div class="wrapperDate">
+					<p class="t3">Срок<br>действия</p>
+					<select id="month" class="month"> 
+							<option value="01">01</option> 
+							<option value="02">02</option> 
+							<option value="03">03</option> 
+							<option value="04">04</option> 
+							<option value="05">05</option> 
+							<option value="06">06</option> 
+							<option value="07">07</option> 
+							<option value="08">08</option> 
+							<option value="09">09</option> 
+							<option value="10">10</option> 
+							<option value="11">11</option> 
+							<option value="12">12</option> 
+					</select>
+					<select id="year" class="year"> 
+							<option value="20">20</option> 
+							<option value="21">21</option> 
+							<option value="22">22</option> 
+							<option value="23">23</option> 
+							<option value="23">24</option> 
+					</select>
+					<div class="wrapperCVV" align="right">
+						<p class="t4">CVV</p>
+						<input id="CVV" type="text" class="CVV">
+					</div>
+				</div>
+			</cardForm>
+			<cardForm>
+				<p class="t1">Получатель</p>
+				<p class="t2">Номер карты получателя</p>
+				<input id="receiver" type="text" class="cardNumber" placeholder="____ ____ ____ ____">
+				<div class="wrapperMoney">
+					<p class="t5">Сумма<br>перевода</p>
+					<input id="money" type="text" class="money">
+					<select id="currency" class="currency"> 
+						<option value="0">$</option> 
+						<option value="1">€</option> 
+						<option value="2">₴</option> 
+					</select>
+				</div>
+				<button id="moneySend" type="submit" class="moneySend">Перевести</button>
+			</cardForm>
+		</div>
+		</form>
+		<div class="buttonWrapper">
+			<button id="autoFill" type="button" class="autoFill" onclick="autoFill()">AutoFill</button>
+			<button id="checks" type="button" class="checks" onclick="checks()">Checks</button>
+		</div>
+		<table id="table" class="table">
+			<tr>
+				<th>Sender</th>
+				<th>Receiver</th>
+				<th>Money</th>
+				<th>Commission</th>
+			</tr>
+		<table>
+		<button id="filter" type="button" class="filter" onclick="filter()">Money filter</button>
+		<button id="undo" type="button" class="undo" onclick="undo()">Undo</button>
+		<script src="static/js.js"></script>
+		<footer>
+		</footer>
+	</body>
+</html>
